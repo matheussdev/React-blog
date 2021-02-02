@@ -1,0 +1,33 @@
+#page-tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+}
+#page-tag-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-tag{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-tag h1{
+    color: var(--color-secundary);
+    width: 100%;
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    border-bottom: 2px solid var(--color-title-in-white);
+}
+
+@media(max-width:1000px){
+    .content-tag{
+        width: 100%;
+    }
+}

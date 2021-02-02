@@ -1,0 +1,99 @@
+.container-preview{
+    
+    width: 100%;
+    
+}
+
+.container-preview .post-preview{
+    display: flex;
+    height: 20rem;
+    margin: 0 0 3rem 0;
+}   
+.container-preview .post-preview .container-img{
+    background-color: var(--color-mockup);
+
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin-right: 2rem;
+    position: relative;
+}
+.container-preview .post-preview .container-img a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container-preview .post-preview .container-img span{
+    background-color: var(--color-primary);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    color: var(--color-title-in-primary);
+    margin: 0 0 0 auto;
+
+    min-width: 10rem;
+}
+.container-preview .post-preview .text-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 20rem;
+    padding: 2rem 1rem 1rem;
+    max-height: 20rem;
+
+    justify-content: space-between;
+}
+.container-preview .post-preview .text-container h2{
+    text-transform: capitalize;
+    color: var(--color-title-in-white);
+    transition: opacity 0.3s ease-in-out;
+
+}
+.container-preview .post-preview .text-container h2 a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.container-preview .post-preview .text-container h2 a:hover{
+    color: var(--color-secundary);
+}
+
+.container-preview .post-preview .text-container p{
+    height: 9.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container-preview .post-preview .text-container p a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: opacity 0.3s ease-in-out;
+
+}
+.container-preview .post-preview .text-container p a:hover{
+    color: var(--color-secundary);
+    text-decoration: underline;
+}
+
+@media(max-width:1000px){
+    .container-preview .post-preview{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0 0 3rem 0;
+    }
+    .container-preview .post-preview .container-img{
+        width: 100%;
+        height: 25rem;
+    }
+    .container-preview .post-preview .text-container{
+        flex-direction: column;
+        width: 100%;
+    }
+}

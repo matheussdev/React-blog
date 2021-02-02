@@ -1,0 +1,49 @@
+:root{
+    font-size: 60%;
+
+    --color-primary:#08418B;
+    --color-secundary:#002F6C;
+    --color-button:#00B031;
+    --color-button-dark:#01a02e;
+    --colo-background:#F0F0F7;
+    --color-box-base:#ffffff;
+    --color-title-in-primary:#ffffff;
+    --color-title-in-white:#131313;
+    --colo-text:#131313;
+    --color-mockup:rgb(170, 170, 170);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: var(--colo-background);
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body,
+input,
+button,
+textarea{
+    font: 500 1.6rem roboto;
+}
+
+.container{
+    width: 90%;
+    max-width: 1530px;
+}
+
+@media (min-width:700px){
+    :root{
+        font-size: 62.5%;
+    }
+}

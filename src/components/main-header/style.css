@@ -1,0 +1,121 @@
+#main-header{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+}
+
+#main-header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+#main-header-content .logo{
+    color: var(--color-title-in-primary);
+    font-size: 2.8rem;
+    text-decoration: none;
+}
+
+#main-header-content .menu{
+    display: flex;
+
+    
+}
+
+#main-header-content .menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+#main-header-content .menu li{
+   text-decoration: none;
+   padding: 10px;
+}
+#main-header-content .menu li a{
+    padding: 10px;
+    text-decoration: none;
+
+    color: var(--color-title-in-primary);
+
+    transition: opacity 0.3s ease-in-out;
+    
+}
+#main-header-content .menu li a:hover{
+    opacity: 0.6;
+
+}
+
+.seach-input{
+    display: flex;
+    align-items: center;
+    width: 30rem;
+}
+
+.seach-input input{
+    width: 100%;
+    padding: 1.4rem 0.5rem 0.6rem 1rem;
+    border: none;
+}
+
+.seach-input button{
+    width: 30%;
+    height: 3.92rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--color-button);
+    margin: auto 0;
+
+    transition: all 0.3s ease-in-out;
+    
+    cursor: pointer;
+}
+.seach-input button:hover{
+
+    background-color: var(--color-button-dark);
+}
+.menuIcon{
+    display: none;
+}
+.menuIcon img{
+    height: 5rem;
+}
+@media(max-width:1400px){
+    .seach-input{
+        justify-content: flex-end;
+        width: 6rem;
+    }
+    .seach-input button{
+        border-radius: 13px;
+        width: 100%;
+    }
+    .seach-input input{
+        display:none;
+    }
+}
+
+@media(max-width:1000px){
+    #main-header-content .logo{
+        font-size: 2.5rem;
+    }
+    #main-header-content .menu ul{
+        display: none;
+    }
+    #main-header-content .menu .menuIcon{
+        display: flex;
+    }
+    .seach-input{
+        display: none;
+    }
+}
